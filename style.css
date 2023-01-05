@@ -1,0 +1,49 @@
+/* Setting the background image to the body of the page. */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(yishu-5-05.jpg) 50% 50% no-repeat;
+  background-size: cover; /* Esta linea sirve para poner la imagen en toda la pantalla compelta */
+  display: table;
+}
+
+.container {
+  margin-top: 300px;
+}
+
+/* Setting the font, color, size, etc. of the h1 tag. */
+h1 {
+  color: white;
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  font-size: 500%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Una consulta de medios. Dice que si la pantalla tiene menos de 768 px, entonces la etiqueta h1 tendrá una fuente
+tamaño de 300% y la etiqueta p tendrá un tamaño de fuente de 12 px y un espacio entre letras de 8 px. */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 300%;
+  }
+
+  p {
+    font-size: 12px;
+    letter-spacing: 8px;
+  }
+}
